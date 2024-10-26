@@ -1,0 +1,9 @@
+# IDE files
+.idea
+
+# npm files
+node_modules
+
+# build files
+dist
+src/test/**/*.js
