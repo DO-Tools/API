@@ -26,7 +26,8 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "postbuild": "npm test",
-    "test": "node --import tsx --test --experimental-test-coverage --test-coverage-include=src/main/**/*.ts src/test/**/*.test.ts",
+    "test": "node --import tsx --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=coverage.info --test-coverage-include=src/main/**/*.ts src/test/**/*.test.ts",
+
     "prepublishOnly": "npm run build"
   },
   "repository": {
